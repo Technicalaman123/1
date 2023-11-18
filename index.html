@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>technical aman project </title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+        }
+        .emojis {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO </h1>
+<h1>TECHNICAL AMAN WORLD</h1>
+    <p class="emojis">😀😃😄😁😆😅😂🤣😊😇🙂🙃😍😋🥰😘😚😎🤩😻🤗</p>
+</body>
+<h2>(I am always with you 😉)</h2>
+<p>(just 🤗belive)<p>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stylish Pin Lock</title>
+    <style>
+        body {
+            background-color: #fff; /* Set the initial background color */
+            transition: background-color 1s;
+        }
+        .pin-input {
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            text-align: center;
+        }
+        #message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter 4-digit Pin</h1>
+    <form id="pinForm">
+        <input class="pin-input" type="number" id="digit1" maxlength="1" min="0" max="9" required>
+        <input class="pin-input" type="number" id="digit2" maxlength="1" min="0" max="9" required>
+        <input class="pin-input" type="number" id="digit3" maxlength="1" min="0" max="9" required>
+        <input class="pin-input" type="number" id="digit4" maxlength="1" min="0" max="9" required>
+        <br>
+<p>👇<p>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="message"></p>
+
+    <script>
+        document.getElementById("pinForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var digit1 = document.getElementById("digit1").value;
+            var digit2 = document.getElementById("digit2").value;
+            var digit3 = document.getElementById("digit3").value;
+            var digit4 = document.getElementById("digit4").value;
+            var enteredPin = digit1 + digit2 + digit3 + digit4;
+
+            if (enteredPin === "0014") {
+                document.getElementById("message").innerHTML = "Correct Pin! Access granted.";
+                document.body.style.backgroundColor = "black"; // Change background color to blue
+                // Open the link after a short delay (for demonstration purposes)
+                setTimeout(function() {
+                    window.location.href = "https://technicalaman123.github.io/we3rd-/";
+                }, 1000); // Delay for 1 second (1000 milliseconds)
+            } else {
+                document.getElementById("message").innerHTML = "wrong password . Try again.";
+                document.getElementById("pinForm").reset();
+            }
+        });
+    </script>
+</body><html>
+<head>
+    <style>
+        body {
+            background-color: blue;
+        }
+    </style>
+</html>
